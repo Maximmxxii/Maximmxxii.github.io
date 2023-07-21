@@ -18,13 +18,14 @@
     <section class="inicio" id="inicio">
       <div class="contenido-seccion">
         <header>
-          <div class="nav-bar">
+          <div class="nav-bar" onclick="mostrarOcultarMenu()">
             <i class="fa-solid fa-bars"></i>
           </div>
           <nav id="nav" class="nav">
             <a href="#inicio">Inicio</a>
             <a href="#sobremi">Sobre Mí</a>
             <a href="#habilidades">Habilidades</a>
+            <a href="#resumen">Resumen</a>
             <a href="#contacto">Contacto</a>
           </nav>
           <div class="logo">D<span class="color">R</span></div>
@@ -33,7 +34,7 @@
           <h1>DIEGO REYES</h1>
           <h2>Tecnologo TIC's - Desarrollador Web (JavasScript, Python)</h2>
           <div class="redes">
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com/maximmiv" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -130,7 +131,7 @@
     <!--SECCION HABILIDADES-->
     <section class="habilidades" id="habilidades">
       <div class="contenido-seccion">
-        <h2 class="titulo seccion">Mis habilidades</h2>
+        <h2 class="titulo-seccion">Mis habilidades</h2>
         <h3>Me especializo en</h3>
 
         <div class="fila">
@@ -198,23 +199,110 @@
             <table>
               <tr>
                 <td class="datos">
-                  <h3>2021 - 2023</h3>
+                  <h3>2022 - 2022</h3>
                 </td>
                 <td rowspan="2" class="descripcion">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum."
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <h4>Diplomado en Desarollo Web</h4>
+                    <p>Universidad de Caldas</p>
+                    <span class="promedio">4.8 PG</span>
                 </td>
               </tr>
             </table>
+            <table>
+                <tr>
+                  <td class="datos">
+                    <h3>2021 - 2023</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <h4>Tecnologo en Tic's</h4>
+                      <p>Servicio Nacional de Aprendizaje SENA</p>
+                      <span class="promedio">4.5 PG</span>
+                  </td>
+                </tr>
+              </table>
+          </div>
+          <div class="col">
+            <span class="titulo">Experiencia Laboral</span>
+            <table>
+              <tr>
+                <td class="datos">
+                  <h3>1 Año</h3>
+                </td>
+                <td rowspan="2" class="descripcion">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <h4>F&R Innovations</h4>
+                    <p>Monitor web</p>                   
+                </td>
+              </tr>
+            </table>
+            <table>
+                <tr>
+                  <td class="datos">
+                    <h3>1 Año</h3>
+                  </td>
+                  <td rowspan="2" class="descripcion">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <h4>Hamburguesas el Corral</h4>
+                      <p>Administrador</p>                     
+                  </td>
+                </tr>
+              </table>
+          </div>
+        </div>       
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+      <div class="contenido-seccion">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <h3>Ponte en contacto ahora mismo!</h3>
+
+        <div class="fila">
+          <div class="col">
+            <h2>
+              <i class="fa-solid fa-phone"></i> Teléfono
+            </h2>
+            <span class="info-contacto">+57 3146947099</span>
+          </div>
+          <div class="col">
+            <h2>
+              <i class="fa-solid fa-envelope"></i>Correo
+            </h2>
+            <span class="info-contacto">direyes.developer@gmail.com</span>
+          </div>
+          <div class="col">
+            <h2>
+              <i class="fa-solid fa-globe"></i>Página Web
+            </h2>
+            <span class="info-contacto">diegoreyes.co</span>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="app.js"></script>
   </body>
 </html>
