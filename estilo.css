@@ -178,23 +178,53 @@ html{
     font-weight: bold;
     margin: 8px 0;
 }
+
 /*SECCCION HABILIDADES*/
 
 .habilidades{
-    padding: 80px 0 100px 0;
+    width: 100%;
+    height: 100%;
+    /*padding: 80px 0 100px 0;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
     url("img/habilidades.jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    color: #ffff;
+    color: #ffff;*/
 }
 .habilidades .contenido-seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px auto;
     max-width: 1000px;
     margin: auto;
     padding: 0 10px;
 }
+
+.title {
+    display: none;
+}
+.img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.habilidades:hover .title {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
 .habilidades .contenido-seccion h3{
     text-transform: uppercase;
     font-size: 25px;
