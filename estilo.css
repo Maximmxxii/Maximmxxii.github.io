@@ -126,6 +126,7 @@ html{
 }
 /*Estilos Generales */
 .titulo-seccion{
+    text-align: center;
     font-family: "Yellowtail";
     font-size: 2.5rem;
 }
@@ -184,8 +185,8 @@ html{
 .habilidades{
     width: 100%;
     height: 100%;
-    /*padding: 80px 0 100px 0;
-    text-align: center;
+    padding: 80px 0 100px 0;
+    /*text-align: center;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
     url("img/habilidades.jpeg");
     background-size: cover;
@@ -193,23 +194,20 @@ html{
     background-position: center center;
     color: #ffff;*/
 }
-.habilidades .contenido-seccion{
+.habilidades .contenido-seccion{    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 10px auto;
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 10px;
+    align-items: center;
 }
 
 .title {
     display: none;
 }
-.img {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
+.habilidades .contenido-seccion img{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
 }
 
 .habilidades:hover .title {
@@ -234,27 +232,7 @@ html{
     justify-content: space-between;
     margin-top: 30px;
 }
-.habilidades .contenido-seccion .fila .col{
-    width: 47%;
-    text-align: left;
-}
-.habilidades .contenido-seccion .fila .col .cont-barra{
-    display: flex;
-    align-items: center;
-}
-.habilidades .contenido-seccion .barra{
-    display: flex;
-    border: 1px solid #990418;
-    padding: 2px;
-    border-radius: 3px;
-    margin-right: 10px;
-}
-.habilidades .contenido-seccion .barra .e{
-    background-color: #363636;
-    width: 20px;
-    height: 30px;
-    margin-right: 2px;
-}
+
 /*SECCION RESUMEN*/
 
 .resumen{
