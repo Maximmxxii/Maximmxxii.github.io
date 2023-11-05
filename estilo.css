@@ -1,11 +1,56 @@
 /*Importamos fuentes*/
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
 
+/*Media queries*/
+@media screen and (max-width: 768px) {
+    /*Redimensionar elementos*/
+    .inicio{
+        background-size: contain;
+    }
+    .inicio .contenido-seccion{
+        width: 100%;
+    }
+    .inicio .info{
+        text-align: center;
+    }
+    .inicio .info .col{
+        display: flex;
+        flex-direction: column;
+    }
+    .inicio .info .col .titulo{
+        text-align: center;
+    }
+    .inicio .info .col .descripcion{
+        margin-top: 10px;
+    }
+    /*Ocultar elementos*/
+    .inicio .header .nav-bar{
+        display: none;
+    }
+    .inicio .foto{
+        display: none;
+    }
+    .inicio .redes{
+        display: none;
+    }
+    /*Cambiar la posición de elementos*/
+    .inicio .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .inicio .info h1{
+        margin-top: 0;
+    }
+}
+
 *{
     font-family: "Titillium Web";
     margin: 0;
     padding: 0;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -217,11 +262,11 @@ html{
     font-size: 20px;
     text-align: center;
     opacity: 0.1;
-    transform: scale(1,1);
+    /*transform: scale(2,1);*/
 }
 
 .habilidades-img:hover {
-    /*transform: scale(2.1);*//*Transform amplia las imagenes a la escala deseada*/
+    transform: scale(2.2);/*Transform amplia las imagenes a la escala deseada*/
     opacity: 0.5;
     display: block;
     background-color: rgba(8, 8, 8, 0.5);
@@ -324,3 +369,4 @@ html{
     color: #990418;
 
 }
+
