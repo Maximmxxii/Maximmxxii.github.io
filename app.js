@@ -1,21 +1,35 @@
-//menu Lateral
+// Inicializa una variable booleana para rastrear si el menú está visible o no.
 var menu_visible = false;
+
+// Obtiene una referencia al elemento del menú lateral en el DOM.
 let menu = document.getElementById("nav");
-function mostrarOcultarMenu(){
-    if(menu_visible == false){//Si esta oculto
-        menu.style.display = "block";
-        menu_visible = true;
-    }else{
-        menu.style.display = "none";
-        menu_visible = false;
-    }
+
+// Función para mostrar u ocultar el menú.
+function mostrarOcultarMenu() {
+  // Si el menú está oculto...
+if (menu_visible == false) {
+    // Muestra el menú.
+    menu.style.display = "block";
+    // Actualiza la variable para indicar que el menú está visible.
+    menu_visible = true;
+} else {
+    // Si el menú está visible...
+    // Oculta el menú.
+    menu.style.display = "none";
+    // Actualiza la variable para indicar que el menú está oculto.
+    menu_visible = false;
+}
 }
 
-//oculto el menu una vez que se selecciono una opcion
+// Obtiene una referencia a todos los enlaces dentro del menú.
 let links = document.querySelectorAll("nav a");
-for(var x = 0; x<links.length;x++){
-    links[x].onclick = function(){
-        menu.style.display = "none";
-        menu_visible = false;
-    }
+
+// Agrega un controlador de eventos a cada enlace.
+for (var x = 0; x < links.length; x++) {
+links[x].onclick = function () {
+    // Cuando se hace clic en un enlace, oculta el menú.
+    menu.style.display = "none";
+    // Actualiza la variable para indicar que el menú está oculto.
+    menu_visible = false;
+};
 }
