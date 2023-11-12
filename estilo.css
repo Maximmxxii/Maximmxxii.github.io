@@ -1,28 +1,30 @@
-/*Importamos fuentes*/
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap");
+/*Importamos fuentes*/ 
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap"); /* Importa las fuentes 'Titillium Web' y 'Yellowtail' de Google Fonts.*/
 
-/*Media queries*/
-@media screen and (max-width: 768px) {
+/*Media queries*/ 
+@media screen and (max-width: 768px) { /* Establece un punto de interrupción para pantallas con un ancho máximo de 768px.*/
+
 /*Redimensionar elementos*/
-.inicio {
-    background-size: contain;
+.inicio { 
+    background-size: contain; /* Ajusta el tamaño de fondo del elemento con la clase 'inicio' para que se ajuste dentro del contenedor.*/
 }
-.inicio .contenido-seccion {
-    width: 100%;
+.inicio .contenido-seccion { 
+    width: 100%; /* Establece el ancho del elemento con la clase 'contenido-seccion' dentro de 'inicio' al 100% del contenedor.*/
 }
-.inicio .info {
-    text-align: center;
+.inicio .info { 
+    text-align: center; /* Centra el texto del elemento con la clase 'info' dentro de 'inicio'.*/
 }
-.inicio .info .col {
-    display: flex;
-    flex-direction: column;
+.inicio .info .col { 
+    display: flex; /* Aplica un diseño flexible al elemento con la clase 'col' dentro de 'info' en 'inicio'.*/
+    flex-direction: column; /* Cambia la dirección del diseño flexible a columna.*/
 }
-.inicio .info .col .titulo {
-    text-align: center;
+.inicio .info .col .titulo { 
+    text-align: center; /* Centra el texto del elemento con la clase 'titulo' dentro de 'col' en 'info' en 'inicio'.*/
 }
-.inicio .info .col .descripcion {
-    margin-top: 10px;
+.inicio .info .col .descripcion { 
+    margin-top: 10px; /* Aplica un margen superior de 10px al elemento con la clase 'descripcion' dentro de 'col' en 'info' en 'inicio'.*/
 }
+
 /*Ocultar elementos*/
 .inicio .header .nav-bar {
     display: none;
