@@ -1,14 +1,19 @@
 /*Importamos fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap'); /* Importa las fuentes 'Titillium Web' y 'Yellowtail' de Google Fonts.*/
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --color-primary: #990418;
+    --color-secondary: #000;
+    --color-tertiary: #ffff;
+}
 *{
     font-family: "Titillium Web";
     margin: 0;
     padding: 0;
 }
-html{
-    scroll-behavior: smooth;
-}
+
 
 /*SECCION INICIO*/
 .inicio{
@@ -16,7 +21,7 @@ html{
     url("img/fondo2.jpg");
     background-size: cover;
     background-position: center center;
-    color: #ffff;
+    color: var(--color-tertiary);
 }
 .inicio .contenido-seccion{
     max-width: 1000px;
@@ -32,7 +37,7 @@ html{
 .inicio .contenido-seccion header nav{
     position: fixed;
     margin-left: 60px;
-    background-color: #990418;
+    background-color: var(--color-primary);
     padding: 15px;
     border-radius: 10px;
     text-align: left;
@@ -42,7 +47,7 @@ html{
 
 .inicio .contenido-seccion header nav a{
     display: block;
-    color: #ffff;
+    color: var(--color-tertiary);
     text-decoration: none;
     margin-bottom: 10px;
     font-weight: bold;
@@ -51,18 +56,18 @@ html{
 /************/
 .inicio .contenido-seccion header .logo{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 6.5rem;
     font-family: "Yellowtail";
-    text-shadow:  0 0 35px #ffff;
+    text-shadow:  0 0 35px var(--color-tertiary);
 }
 
 .inicio .contenido-seccion header .logo .color{
-    color: #990418;
+    color: var(--color-primary);
     font-family: "Yellowtail";
 }
 .inicio .contenido-seccion header .nav-bar{
     position: fixed;
-    background-color: #990418;
+    background-color: var(--color-primary);
     font-size: 20px;
     width: 50px;
     height: 50px;
@@ -73,52 +78,80 @@ html{
 }
 
 .inicio .contenido-seccion header .nav-bar:hover{
-    box-shadow: 0 0 35px #ffff;
+    box-shadow: 0 0 35px var(--color-tertiary);
 }
 .inicio .contenido-seccion .info{
     padding-bottom: 130px;
 }
 .inicio .contenido-seccion .info h1{
-    font-size: 3rem;
+    font-size: 6rem;
     letter-spacing: 5px;
 }
 
 .inicio .contenido-seccion .info h2{
     font-weight: normal;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: -10px;
     letter-spacing: 2px;
 }
 
-.inicio .contenido-seccion .info .redes{
+.redes-sociales {
+    margin: 20px 0;
+    display: flex;
+    justify-content:center;
+}  
+.redes-sociales a i {
+    font-size: 28px;
+}  
+.redes-sociales a {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    transition: 0.5s;
+}  
+.redes-sociales a:hover {
+    color: var(--color-tertiary);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 20px var(--color-tertiary);
+}
+
+/* .inicio .contenido-seccion .info .redes{
     margin: 20px 0;
 }
 .inicio .contenido-seccion .info .redes a{
     display: inline-block;
     text-decoration: none;
     background-color: #000;
-    color: #990418;
-    border: 1px solid #990418;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     margin: 0 5px;
-    transition: .3s;
+    transition: 1.3s;
 }
 
 .inicio .contenido-seccion .info .redes a:hover{
-    color: #ffff;
-    background-color: #990418;
-    box-shadow: 0 0 20px #ffff;
-}
+    color: #var(--color-tertiary);;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 20px #var(--color-tertiary);;
+} */
 .inicio .contenido-seccion .foto{
     position: relative;
 }
 .inicio .contenido-seccion .foto img{
     max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #990418;
+    border: 5px solid var(--color-primary);
     position: absolute;
     left: 50%;
     top: -100px;
@@ -128,7 +161,7 @@ html{
 .titulo-seccion{
     text-align: center;
     font-family: "Yellowtail";
-    font-size: 2.5rem;
+    font-size: 5.5rem;
 }
 /*SECCION SOBRE MI */
 .sobremi{
@@ -148,14 +181,14 @@ html{
     font-size: 25px;
 }
 .sobremi .contenido-seccion .especial{
-    color: #990418;
+    color: var(--color-primary);
     font-weight: bold;
     margin-top: 15px;    
 }
 .sobremi .contenido-seccion p{
     max-width: 700px;
     margin: auto;
-    color: #990418;
+    color: var(--color-primary);
 }
 .sobremi .contenido-seccion .fila{
     display: flex;
@@ -166,11 +199,11 @@ html{
     width: 30%;
 }
 .sobremi .contenido-seccion .fila .col i{
-    color: #990418;
+    color: var(--color-primary);
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 2px solid #990418;
+    border: 2px solid var(--color-primary);
     line-height: 40px;
     border-radius: 50%;    
 }
@@ -190,22 +223,29 @@ html{
 }
 .habilidades .contenido-seccion{    
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
 
-.title {
-    display: none;
+.habilidades .habilidades-lista {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
 }
+
 .habilidades .contenido-seccion img{
     width: 250px;
     height: 250px;
     margin: 40px;
     padding: 30px;
 }
+.habilidades-info{
+    text-align: center;
 
-.habilidades-info:hover {
+}
+
+.li:hover {
     display: block;
     width: 250px;
     height: 250px;
@@ -220,8 +260,8 @@ html{
     transform: scale(1,1);
 }
 
-.habilidades-img:hover {
-    /*transform: scale(2.1);*//*Transform amplia las imagenes a la escala deseada*/
+/* .habilidades-lista:hover {
+    transform: scale(2.1);/*Transform amplia las imagenes a la escala deseada
     opacity: 0.5;
     display: block;
     background-color: rgba(8, 8, 8, 0.5);
@@ -230,12 +270,11 @@ html{
     color: white;
     font-size: 20px;
     text-align: center;
+} */
 
-}
-
-.habilidades-img:hover .habilidades-info {
+/* .habilidades-img:hover .habilidades-info {
     display: block;
-}
+} */
 
 /*SECCION RESUMEN*/
 
@@ -264,9 +303,9 @@ html{
 }
 .resumen .contenido-seccion .info .col .titulo{
     display: inline-block;
-    color: #990418;
+    color: var(--color-primary);
     font-weight: bold;
-    border: 2px solid #990418;
+    border: 2px solid var(--color-primary);
     padding: 10px;
 }
 .resumen .contenido-seccion .info .col table{
@@ -289,18 +328,24 @@ html{
 }
 .resumen .contenido-seccion .info .col table .promedio{
     display: block;
-    color: #990418;
+    color: var(--color-primary);
     margin-top: 10px;
     font-weight: bold;
 }
 .resumen .contenido-seccion .info .col table .descripcion{
     border-left: 1px solid #bab9b9;
     padding-left: 20px;
+    color: var(--color-primary);
 }
 /*SECCION CONTACTO*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
 .contacto{
     background-color: #202020;
-    padding: 140px 0 100px 0;
+    padding: 50px 0 40px 0;
     color: #e6e6e6;
     text-align: center;
 }
@@ -318,9 +363,9 @@ html{
     justify-content: space-around;
 }
 .contacto .contenido-seccion .fila .col{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .contacto .contenido-seccion .fila .col h2{
-    color: #990418;
+    color: var(--color-primary);
 
 }
