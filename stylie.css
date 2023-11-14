@@ -1,0 +1,78 @@
+body {
+  background-color: black; /* Establece el color de fondo del cuerpo del documento a negro, representando el espacio */
+}
+
+.container {
+  height: 400px; /* Establece la altura del contenedor del universo */
+  width: 400px; /* Establece la anchura del contenedor del universo */
+  position: absolute; /* Posiciona el contenedor del universo de manera absoluta en relación con su contenedor padre */
+  transform: translate(110%, 50%); /* Mueve el contenedor del universo a la derecha y hacia abajo desde su posición original */
+}
+
+.sun {
+  width: 100px; /* Establece la anchura del sol */
+  height: 100px; /* Establece la altura del sol */
+  background-color: yellow; /* Establece el color de fondo del sol a amarillo */
+  border-radius: 50%; /* Hace que el sol sea redondo */
+  box-shadow: 0 0 30px orange; /* Añade una sombra naranja alrededor del sol */
+  position: absolute; /* Posiciona el sol de manera absoluta en relación con su contenedor padre */
+  top: 150px; /* Posiciona el sol desde la parte superior del contenedor padre */
+  left: 150px; /* Posiciona el sol desde la izquierda del contenedor padre */
+}
+
+.globe.earth {
+  background: aqua; /* Establece el color de fondo de la Tierra a aqua */
+  height: 30px; /* Establece la altura de la Tierra */
+  right: 28px; /* Posiciona la Tierra desde la derecha del contenedor padre */
+  top: 28px; /* Posiciona la Tierra desde la parte superior del contenedor padre */
+  width: 30px; /* Establece la anchura de la Tierra */
+}
+
+.globe.moon {
+  width: 12px; /* Establece la anchura de la Luna */
+  height: 12px; /* Establece la altura de la Luna */
+  background: #d6d6d6; /* Establece el color de fondo de la Luna a gris claro */
+  right: 2px; /* Posiciona la Luna desde la derecha del contenedor padre */
+  top: 8px; /* Posiciona la Luna desde la parte superior del contenedor padre */
+}
+
+.globe {
+  border-radius: 50%; /* Hace que todos los globos (sol, tierra, luna) sean redondos */
+  position: absolute; /* Posiciona todos los globos de manera absoluta en relación con su contenedor padre */
+}
+
+.orbit.earth {
+  position: relative; /* Posiciona la órbita de la Tierra de manera relativa a su posición normal */
+  animation: orbit 36.5s linear infinite; /* Aplica una animación que hace que la Tierra orbite alrededor del sol de manera constante e infinita */
+  height: 300px; /* Establece la altura de la órbita de la Tierra */
+  left: 50px; /* Posiciona la órbita de la Tierra desde la izquierda del contenedor padre */
+  top: 50px; /* Posiciona la órbita de la Tierra desde la parte superior del contenedor padre */
+  width: 300px; /* Establece la anchura de la órbita de la Tierra */
+}
+
+.orbit.moon {
+  animation: orbit 2.7s linear infinite; /* Aplica una animación que hace que la Luna orbite alrededor de la Tierra de manera constante e infinita */
+  height: 80px; /* Establece la altura de la órbita de la Luna */
+  left: -25px; /* Posiciona la órbita de la Luna desde la izquierda del contenedor padre */
+  top: -25px; /* Posiciona la órbita de la Luna desde la parte superior del contenedor padre */
+  width: 80px; /* Establece la anchura de la órbita de la Luna */
+}
+
+.orbit {
+  position: relative; /* Posiciona todas las órbitas de manera relativa a su posición normal */
+  border: solid; /* Establece el borde de todas las órbitas a sólido */
+  border-color: white transparent transparent transparent; /* Establece el color del borde de todas las órbitas a blanco en la parte superior y transparente en los demás lados */
+  .orbit {
+    border-radius: 50%; /* Hace que todas las órbitas sean redondas */
+    border-width: 1px 1px 0 0; /* Establece el ancho del borde de todas las órbitas a 1px en la parte superior y derecha, y 0 en la parte inferior e izquierda */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+    transform: rotate(0deg); /* Inicialmente, no rota las órbitas */
+    transform-origin: center; /* Establece el punto de origen para las transformaciones en el centro del elemento */
+  }
+  
+  @keyframes orbit {
+    to {
+      transform: rotate(360deg); /* Rota el elemento 360 grados desde su posición original durante la animación */
+    }
+  }
+}  

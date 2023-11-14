@@ -245,7 +245,7 @@ html{
 
 }
 
-.li:hover {
+.habilidades-lista:hover {
     display: block;
     width: 250px;
     height: 250px;
