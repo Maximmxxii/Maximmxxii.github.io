@@ -94,7 +94,6 @@ html{
     margin-top: -10px;
     letter-spacing: 2px;
 }
-
 .redes-sociales {
     margin: 20px 0;
     display: flex;
@@ -242,10 +241,9 @@ html{
 }
 .habilidades-info{
     text-align: center;
-
 }
 
-.habilidades-lista:hover {
+/* .habilidades-lista:hover {
     display: block;
     width: 250px;
     height: 250px;
@@ -258,7 +256,7 @@ html{
     text-align: center;
     opacity: 0.1;
     transform: scale(1,1);
-}
+} */
 
 /* .habilidades-lista:hover {
     transform: scale(2.1);/*Transform amplia las imagenes a la escala deseada
