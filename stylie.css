@@ -6,6 +6,7 @@ h1 {
   font-size: 3rem;
   color: white;
 }
+
 body {
   background-color: black; /* Establece el color de fondo del cuerpo del documento a negro, representando el espacio */
 }
@@ -13,7 +14,7 @@ body {
   height: 400px; /* Establece la altura del contenedor del universo */
   width: 400px; /* Establece la anchura del contenedor del universo */
   position: absolute; /* Posiciona el contenedor del universo de manera absoluta en relación con su contenedor padre */
-  transform: translate(110%, 50%); /* Mueve el contenedor del universo a la derecha y hacia abajo desde su posición original */
+  transform: translate(170%, 50%); /* Mueve el contenedor del universo a la derecha y hacia abajo desde su posición original */
 }
 .sun {
   width: 100px; /* Establece la anchura del sol */
