@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap'); /* Importa las fuentes 'Titillium Web' y 'Yellowtail' de Google Fonts.*/
+
+h1 {
+  text-align: center;
+  font-family: "Yellowtail";
+  font-size: 3rem;
+  color: white;
+}
 body {
   background-color: black; /* Establece el color de fondo del cuerpo del documento a negro, representando el espacio */
 }
