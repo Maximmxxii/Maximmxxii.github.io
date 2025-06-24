@@ -1,12 +1,12 @@
-/*Importamos fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap'); /* Importa las fuentes 'Titillium Web' y 'Yellowtail' de Google Fonts.*/
 html{
     scroll-behavior: smooth;
 }
 :root {
     --color-primary: #990418;
     --color-secondary: #000;
-    --color-tertiary: #ffff;
+    --color-tertiary: #fff;
+    --font-primary: "Titillium Web", sans-serif;
+    --font-accent: "Yellowtail", cursive;
 }
 *{
     font-family: "Titillium Web";
@@ -212,73 +212,93 @@ html{
     margin: 8px 0;
 }
 
-/*SECCCION HABILIDADES*/
-
-.habilidades{
+/* SECCIÓN HABILIDADES */
+.habilidades {
     width: 100%;
-    height: 100%;
-    padding: 80px 0 100px 0;
+    min-height: 50px;
+    padding: 10px 0 10px 0;
     background-color: #d6d3d3;
 }
-.habilidades .contenido-seccion{    
+
+.habilidades .contenido-seccion {    
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1px;
 }
 
 .habilidades .habilidades-lista {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    gap: 56px;
 }
 
-.habilidades .contenido-seccion img{
-    width: 250px;
-    height: 250px;
-    margin: 40px;
-    padding: 30px;
-}
-.habilidades-info{
-    text-align: center;
+.habilidades .habilidades-lista li {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* .habilidades-lista:hover {
-    display: block;
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top:auto;
-    left: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    opacity: 0.1;
-    transform: scale(1,1);
-} */
+.habilidades .contenido-seccion img {
+    width: 200px;
+    height: 200px;
+    margin: 1px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
 
-/* .habilidades-lista:hover {
-    transform: scale(2.1);/*Transform amplia las imagenes a la escala deseada
-    opacity: 0.5;
-    display: block;
-    background-color: rgba(8, 8, 8, 0.5);
-    width: 250px;
-    height: 250px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-} */
+.habilidades .contenido-seccion img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
 
-/* .habilidades-img:hover .habilidades-info {
-    display: block;
-} */
+.habilidades-info {
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.habilidades .habilidades-lista li:hover .habilidades-info {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .habilidades .habilidades-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .habilidades .contenido-seccion img {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidades .contenido-seccion img {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
 
 /*SECCION RESUMEN*/
-
 .resumen{
     background-color: #e6e6e6;
-    padding: 140px 0 100px 0;
+    padding: 20px 0 100px 0;
     text-align: center;
 }
 .resumen .contenido-seccion{
