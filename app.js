@@ -18,18 +18,18 @@ if (menu_visible == false) {
     menu.style.display = "none";
     // Actualiza la variable para indicar que el menú está oculto.
     menu_visible = false;
-}
+ }
 }
 
 // Obtiene una referencia a todos los enlaces dentro del menú.
 let links = document.querySelectorAll("nav a");
 
 // Agrega un controlador de eventos a cada enlace.
-for (var x = 0; x < links.length; x++) {
+for (let x = 0; x < links.length; x++) {
 links[x].onclick = function () {
     // Cuando se hace clic en un enlace, oculta el menú.
     menu.style.display = "none";
     // Actualiza la variable para indicar que el menú está oculto.
     menu_visible = false;
-};
+  };
 }
