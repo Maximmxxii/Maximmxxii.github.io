@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head> <!-- La etiqueta <head> contiene metadatos (datos sobre datos) y enlaces a scripts y hojas de estilo -->
   <meta charset="UTF-8" />
@@ -34,6 +34,7 @@
           <!-- Esta línea crea un elemento a HTML con el atributo href que apunta al id "sobremi" y el texto "Sobre Mí" que muestra un enlace a la sección de sobre mí -->
           <a href="#habilidades">Habilidades</a>
           <!-- Esta línea crea un elemento a HTML con el atributo href que apunta al id "habilidades" y el texto "Habilidades" que muestra un enlace a la sección de habilidades -->
+          <a href="#proyectos">Proyectos</a>
           <a href="#resumen">Resumen</a>
           <!-- Esta línea crea un elemento a HTML con el atributo href que apunta al id "resumen" y el texto "Resumen" que muestra un enlace a la sección de resumen -->
           <a href="#contacto">Contacto</a>
@@ -44,7 +45,7 @@
       </header>
       <div class="info">
         <h1>DIEGO REYES</h1>
-        <h2>Tecnologo TIC's - Desarrollador Web</h2>
+        <h2>Desarrollador Web Full Stack & Automatización IA</h2>
         <div class="redes-sociales">
           <a href="https://twitter.com/maximmiv" target="_blank"><i class="fa-brands fa-twitter"></i></a>
           <!-- Enlace a Twitter con el icono de Twitter -->
@@ -104,13 +105,11 @@
         <div class="col"> <!-- Inicio de la columna para los intereses de la persona -->
           <i class="fa-solid fa-flag"></i> <!-- Icono de los intereses -->
           <span class="titulo-detalle">Intereses</span> <!-- Título del detalle de la Intereses -->
-          <p><!-- Párrafo con detalles de los intereses de la persona -->
-            Amante por la informatica, nuevas tecnologias, Ciberseguridad, bases de datos, ML, Deborador de Libros
-            de superación y motivación. Cinéfilo por convicción, amante del genero terror. Apasionado del desarrollo web
-            con
-            conocimientos en lenguajes como HTML, CSS3, JavaScript, Python y Frameworks: AngularJS, ExpressJs, BD: SQL &
-            NoSQL. Con deseos fervientes de ser parte de un
-            Team Developer.
+          <p>
+            Apasionado por la tecnología, automatización con IA, desarrollo de productos SaaS y el
+            emprendimiento tech en LATAM. Construye soluciones web completas: desde sistemas B2B con
+            facturación DIAN hasta chatbots WhatsApp y buscadores SaaS. Cinéfilo por convicción,
+            devorador de libros de tecnología y negocios.
           </p>
         </div>
       </div>
@@ -144,7 +143,81 @@
             <h1>PYTHON</h1>
           </div>
         </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="habilidades-img">
+          </a>
+          <div class="habilidades-info"><h1>LARAVEL</h1></div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="habilidades-img">
+          </a>
+          <div class="habilidades-info"><h1>REACT</h1></div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="habilidades-img">
+          </a>
+          <div class="habilidades-info"><h1>PHP</h1></div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="habilidades-img">
+          </a>
+          <div class="habilidades-info"><h1>MYSQL</h1></div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="habilidades-img">
+          </a>
+          <div class="habilidades-info"><h1>DOCKER</h1></div>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" class="habilidades-img">
+          </a>
+          <div class="habilidades-info"><h1>WORDPRESS</h1></div>
+        </li>
       </ul>
+    </div>
+  </section>
+
+  <!--SECCION PROYECTOS-->
+  <section class="habilidades" id="proyectos">
+    <div class="contenido-seccion">
+      <h2 class="titulo-seccion">Proyectos</h2>
+      <div class="fila" style="flex-wrap:wrap; gap:1.5rem; justify-content:center;">
+
+        <div class="col" style="max-width:280px; text-align:center;">
+          <i class="fa-solid fa-store" style="font-size:2rem;"></i>
+          <h3 style="margin:.5rem 0;">santacocoa.com</h3>
+          <p>Sitio WordPress con tema custom PHP para cafetería en Cali. Responsive, Formspree, mapas embebidos.</p>
+          <a href="https://santacocoa.com" target="_blank" style="color:inherit;">Ver sitio →</a>
+        </div>
+
+        <div class="col" style="max-width:280px; text-align:center;">
+          <i class="fa-solid fa-magnifying-glass" style="font-size:2rem;"></i>
+          <h3 style="margin:.5rem 0;">SearchCOP.co</h3>
+          <p>SaaS buscador de contratos públicos SECOP II Colombia. React 19 + Vite + Supabase. Modelo freemium.</p>
+          <a href="https://searchcop.co" target="_blank" style="color:inherit;">Ver proyecto →</a>
+        </div>
+
+        <div class="col" style="max-width:280px; text-align:center;">
+          <i class="fa-solid fa-boxes-stacking" style="font-size:2rem;"></i>
+          <h3 style="margin:.5rem 0;">Distribuidora B2B</h3>
+          <p>Sistema de ventas y facturación electrónica DIAN. Laravel 11, MySQL, portal cliente, integración SIIGO.</p>
+          <span style="color:#888; font-size:.85rem;">Proyecto privado</span>
+        </div>
+
+        <div class="col" style="max-width:280px; text-align:center;">
+          <i class="fa-solid fa-chart-line" style="font-size:2rem;"></i>
+          <h3 style="margin:.5rem 0;">AlphaHunter</h3>
+          <p>Plataforma de análisis financiero con ML. Python + FastAPI + Streamlit + Alpaca Paper Trading.</p>
+          <span style="color:#888; font-size:.85rem;">Proyecto privado</span>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -237,6 +310,25 @@
               </td>
             </tr>
           </table>
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2023 - Hoy</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Desarrollo de sistemas web completos y automatizaciones IA para clientes y productos propios.
+                Sistemas B2B con Laravel 11 y facturación electrónica DIAN, sitios WordPress custom,
+                chatbots WhatsApp/Telegram con n8n + OpenAI, y SaaS con React y Supabase.
+                Gestión de infraestructura VPS con Docker.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>DFR Tech Solutions</h4>
+                <p>Desarrollador Web Full Stack & Automatización IA</p>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
@@ -259,14 +351,13 @@
           <h2>
             <i class="fa-solid fa-envelope"></i> Correo
           </h2>
-          <span class="info-contacto"> <a href="mailto:[maximilianommiv@gmail.com]">maximilianommiv@
-              gmail.com</a></span>
+          <span class="info-contacto"><a href="mailto:maximilianommiv@gmail.com">maximilianommiv@gmail.com</a></span>
         </div>
         <div class="col">
           <h2>
             <i class="fa-solid fa-globe"></i> Página Web
           </h2>
-          <span class="info-contacto"> <a href="http://diegoreyes.co" target="_blank">diegoreyes.site</a></span>
+          <span class="info-contacto"><a href="https://maximmxxii.github.io" target="_blank">maximmxxii.github.io</a></span>
         </div>
       </div>
     </div>
