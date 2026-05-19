@@ -379,7 +379,7 @@ html {
 
 .proyecto-link {
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
   font-weight: bold;
   font-size: 0.9rem;
   text-decoration: none;
@@ -391,7 +391,7 @@ html {
 
 .proyecto-link:hover {
   background-color: var(--color-primary);
-  color: var(--color-tertiary);
+  color: var(--color-tertiary) !important;
 }
 
 .proyecto-badge {
