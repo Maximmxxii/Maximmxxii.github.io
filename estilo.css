@@ -314,6 +314,107 @@ html {
   }
 }
 
+/*SECCION PROYECTOS*/
+.proyectos {
+  width: 100%;
+  padding: 40px 0 60px 0;
+  background-color: #d6d3d3;
+}
+
+.proyectos .contenido-seccion {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.proyecto-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.proyecto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto-icono {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proyecto-icono i {
+  font-size: 1.5rem;
+  color: var(--color-tertiary);
+}
+
+.proyecto-nombre {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+  color: var(--color-secondary);
+}
+
+.proyecto-desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.proyecto-link {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 2px solid var(--color-primary);
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.proyecto-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+.proyecto-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #888;
+  background: #f0f0f0;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*SECCION RESUMEN*/
 .resumen {
   background-color: #e6e6e6;
